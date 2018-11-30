@@ -7,9 +7,48 @@
 </head>
 <body>
 
+<div class="container">
+		<h1 class="text-center"> Consultando numeritos </h1>
+		<div class="row">
+			<div class="col-md-4">
+				<h4> Ingrese un valor en CLP </h4>
+				<input type="text" id="numero" required>
+				<input type="submit" id="cambio-clp" value="CAMBIO">
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="app.js"></script>
+				<h4> Ingrese un valor en USD </h4>
+				<input type="text" id="numero-2" required>
+				<input type="submit" id="cambio-usd" value="CAMBIO">
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h2 id="resumen"></h2>
+			<table class="table table-striped">
+				<tr>
+					<td  id="hide"> Dolar: </td>
+					<td id="dolar"></td>
+				</tr>
+				<tr>
+					<td> Euro: </td>
+					<td id="euro"></td>
+				</tr>
+				<tr> 
+					<td> UF: </td>
+					<td id="uf"></td>
+				</tr>
+				<tr> 
+					<td> UTM: </td>
+					<td id="utm"></td>
+				</tr>
+				<tr>
+					<td> Peso chileno: </td>
+					<td id="clp"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
